@@ -1,0 +1,13 @@
+from src.main import main
+
+import math
+
+import sys
+
+
+if __name__ == "__main__":
+    try:
+        main(sys.argv, len(sys.argv))
+    except Exception as err:
+        print("Error:", err, file=sys.stderr)
+        exit(84)
